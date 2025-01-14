@@ -8,7 +8,7 @@ import Img from "../../../components/LazyloadImage/img";
 import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
 import "./style.scss";
 const heroBanner = () => {
-   const [background, setBackground]=useState("");
+   const [background, setBackground]=useState(Piclix);
    const [query,setQuery]=useState("");
    const navigate= useNavigate();
 
