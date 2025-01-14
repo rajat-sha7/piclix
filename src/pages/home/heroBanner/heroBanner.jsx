@@ -8,7 +8,10 @@ import Img from "../../../components/LazyloadImage/img";
 import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
 import "./style.scss";
 const heroBanner = () => {
-   const [background, setBackground]=useState(Piclix);
+
+
+   const Pic = "https://image.tmdb.org/t/p/original/iI0qvHy2uN1x2mhz1iCuK3HkMs7.jpg"
+   const [background, setBackground]=useState(Pic);
    const [query,setQuery]=useState("");
    const navigate= useNavigate();
 
@@ -34,7 +37,7 @@ const heroBanner = () => {
   return (
     <div className="heroBanner">
     {!loading && <div className="backdrop-img">
-      <Img src={background ? background  :  Piclix}/>
+      <Img src={background ? background  :  Pic}/>
     </div>}
     <div className="opacity-layer"></div>
       <ContentWrapper >
